@@ -9,12 +9,14 @@ import Work5 from "../assets/img/works/3/5.jpg";
 import Branding from "../assets/myimg/Branding.jpg";
 import Webdev from "../assets/myimg/webdevelopment2.jpg";
 
+import GD from "../assets/myimg/GD.png";
+
 export default function Porotfilio() {
   const works = [
     { title: "Character Design", category: "Design ART", image: Work1 },
     { title: "Fancy Cormoran", category: "Photography", image: Branding },
     { title: "This is Random", category: "Branding", image: Webdev },
-    { title: "Editorial Designs", category: "Graphic Design", image: Work4 },
+    { title: "Editorial Designs", category: "Graphic Design", image: GD },
     { title: "Concept Collection", category: "ART Direction", image: Work5 },
   ];
 

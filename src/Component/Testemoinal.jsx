@@ -4,6 +4,8 @@ import "swiper/swiper-bundle.css";
 import Test1 from "../assets/img/testim/1.jpg";
 import Test2 from "../assets/img/testim/2.jpg";
 import Testimonialimg from "../assets/myimg/Testimonial_Photo.png";
+import Testimonialimg2 from "../assets/myimg/Testimonial_Photo2.png";
+import Testimonialimg3 from "../assets/myimg/Testimonial_Photo3.png";
 
 export default function Testimonial() {
   const testimonials = [
@@ -16,10 +18,15 @@ export default function Testimonial() {
     {
       name: "John Doe",
       role: "Designer",
-      image: Testimonialimg,
+      image: Testimonialimg2,
       text: "Another great testimonial goes here. It can contain details about the project and the person who provided the testimonial.",
     },
-
+    {
+      name: "John Doe",
+      role: "Designer",
+      image: Testimonialimg3,
+      text: "Another great testimonial goes here. It can contain details about the project and the person who provided the testimonial.",
+    },
     // Add more testimonials here
   ];
 
