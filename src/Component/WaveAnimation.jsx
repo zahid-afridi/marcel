@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import Stats from "stats.js";
+// import Stats from "stats.js";
 
 const SEPARATION = 120;
 const AMOUNTX = 300;
@@ -62,10 +62,10 @@ const WaveAnimation = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     container.current.appendChild(renderer.domElement);
 
-    const stats = new Stats();
-    stats.domElement.style.position = "absolute";
-    stats.domElement.style.top = "0px";
-    container.current.appendChild(stats.domElement);
+    // const stats = new Stats();
+    // stats.domElement.style.position = "absolute";
+    // stats.domElement.style.top = "0px";
+    // container.current.appendChild(stats.domElement);
 
     window.addEventListener("resize", onWindowResize, false);
   }

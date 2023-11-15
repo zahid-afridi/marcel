@@ -1,5 +1,5 @@
 import React from "react";
-import FoterLogo from "../assets/img/Marcel-Tech-Logo_02.png";
+import FoterLogo from "../assets/myimg/Marcel-Tech-Logo_02.png";
 export default function Footer() {
   return (
     <>

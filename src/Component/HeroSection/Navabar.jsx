@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = ({ logo }) => {
   const [isNavScroll, setIsNavScroll] = useState(false);
 
@@ -88,13 +88,13 @@ const Navbar = ({ logo }) => {
         className={`navbar navbar-expand-lg ${isNavScroll ? "nav-scroll" : ""}`}
       >
         <div className="container-xxl">
-          <a className="navbar-brand" href="#0">
+          <Link className="navbar-brand" to="##0">
             <div className="logo">
               <div className="logo-light">
                 <img src={logo} style={{ zIndex: "999" }} alt="" />
               </div>
             </div>
-          </a>
+          </Link>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
@@ -103,118 +103,121 @@ const Navbar = ({ logo }) => {
                 onMouseEnter={handleDropdownHover}
                 onMouseLeave={handleDropdownLeave}
               >
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="##"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Home
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li className="dropdown-item">
-                    <a href="#0">
+                    <Link to="##0">
                       Showcase <i className="fas fa-angle-right icon-arrow"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-side">
                       <li>
-                        <a className="dropdown-item" href="showcase-full.html">
+                        <Link
+                          className="dropdown-item"
+                          to="#showcase-full.html"
+                        >
                           Fullscreen Slider
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="showcase-interactive-center.html"
+                          to="#showcase-interactive-center.html"
                         >
                           Interactive Links
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="showcase-interactive-center-horizontal.html"
+                          to="#showcase-interactive-center-horizontal.html"
                         >
                           Interactive Links 2
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="showcase-parallax.html"
+                          to="#showcase-parallax.html"
                         >
                           Parallax Slider
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="showcase-column-horizontal.html"
+                          to="#showcase-column-horizontal.html"
                         >
                           Columns Horizontal
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="home-main.html">
+                    <Link className="dropdown-item" to="#home-main.html">
                       Home Main
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="home-creative.html">
+                    <Link className="dropdown-item" to="#home-creative.html">
                       Creative Studio
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="home-modern.html">
+                    <Link className="dropdown-item" to="#home-modern.html">
                       Modern Agency
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="home-business.html">
+                    <Link className="dropdown-item" to="#home-business.html">
                       Business Corporate
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="home-arch.html">
+                    <Link className="dropdown-item" to="#home-arch.html">
                       Architecture
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="home-freelancer.html">
+                    <Link className="dropdown-item" to="#home-freelancer.html">
                       Freelancer
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="home-agency.html">
+                    <Link className="dropdown-item" to="#home-agency.html">
                       Digital Agency
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="dropdown-item"
-                      href="home-fullpage-scroll.html"
+                      to="#home-fullpage-scroll.html"
                     >
                       One Page Scrolling
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="dropdown-item"
-                      href="home-portfolio-grid.html"
+                      to="#home-portfolio-grid.html"
                     >
                       Creative Agency
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="dropdown-item"
-                      href="home-portfolio-minimal.html"
+                      to="#home-portfolio-minimal.html"
                     >
                       Minimal Portfolio
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -224,74 +227,74 @@ const Navbar = ({ logo }) => {
                 onMouseEnter={handleDropdownHover}
                 onMouseLeave={handleDropdownLeave}
               >
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="##"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Pages
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li className="dropdown-item">
-                    <a href="#0">
+                    <Link to="##0">
                       About <i className="fas fa-angle-right icon-arrow"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-side">
                       <li>
-                        <a className="dropdown-item" href="pg-about-us.html">
+                        <Link className="dropdown-item" to="#pg-about-us.html">
                           About Us 1
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="pg-about-us2.html">
+                        <Link className="dropdown-item" to="#pg-about-us2.html">
                           About Us 2
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="dropdown-item">
-                    <a href="#0">
+                    <Link to="##0">
                       Services <i className="fas fa-angle-right icon-arrow"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-side">
                       <li>
-                        <a className="dropdown-item" href="pg-services.html">
+                        <Link className="dropdown-item" to="#pg-services.html">
                           Services 1
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="pg-services2.html">
+                        <Link className="dropdown-item" to="#pg-services2.html">
                           Services 2
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="pg-our-team.html">
+                    <Link className="dropdown-item" to="#pg-our-team.html">
                       Our Team
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="pg-contact.html">
+                    <Link className="dropdown-item" to="#pg-contact.html">
                       Get In Touch
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="pg-mission.html">
+                    <Link className="dropdown-item" to="#pg-mission.html">
                       Our Mission
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="404.html">
+                    <Link className="dropdown-item" to="#404.html">
                       Error 404
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="coming-soon.html">
+                    <Link className="dropdown-item" to="#coming-soon.html">
                       Coming Soon
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -301,122 +304,122 @@ const Navbar = ({ logo }) => {
                 onMouseEnter={handleDropdownHover}
                 onMouseLeave={handleDropdownLeave}
               >
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="##"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Portfolio
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li className="dropdown-item">
-                    <a href="#0">
+                    <Link to="##0">
                       Grid <i className="fas fa-angle-right icon-arrow"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-side">
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-grid-2col.html"
+                          to="#portfolio-grid-2col.html"
                         >
                           Grid 2 Columns
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-grid-3col.html"
+                          to="#portfolio-grid-3col.html"
                         >
                           Grid 3 Columns
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-grid-4col.html"
+                          to="#portfolio-grid-4col.html"
                         >
                           Grid 4 Columns
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="dropdown-item">
-                    <a href="#0">
+                    <Link to="##0">
                       Masonry <i className="fas fa-angle-right icon-arrow"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-side">
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-masonry-classic.html"
+                          to="#portfolio-masonry-classic.html"
                         >
                           Masonry Classic
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-masonry-shadow.html"
+                          to="#portfolio-masonry-shadow.html"
                         >
                           Masonry Shadow
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-masonry-overlay.html"
+                          to="#portfolio-masonry-overlay.html"
                         >
                           Masonry Overlay
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-masonry-big-space.html"
+                          to="#portfolio-masonry-big-space.html"
                         >
                           Masonry Wide Space
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="portfolio-masonry-caption-cursor.html"
+                          to="#portfolio-masonry-caption-cursor.html"
                         >
                           Masonry Cursor Caption
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="dropdown-item"
-                      href="portfolio-layout-hover-effect.html"
+                      to="#portfolio-layout-hover-effect.html"
                     >
                       Hover Effect
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="dropdown-item"
-                      href="portfolio-layout-metro.html"
+                      to="#portfolio-layout-metro.html"
                     >
                       Layout Metro
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="dropdown-item"
-                      href="portfolio-layout-packery.html"
+                      to="#portfolio-layout-packery.html"
                     >
                       Layout Packery
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="project-details.html">
+                    <Link className="dropdown-item" to="#project-details.html">
                       Project Details
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -426,108 +429,117 @@ const Navbar = ({ logo }) => {
                 onMouseEnter={handleDropdownHover}
                 onMouseLeave={handleDropdownLeave}
               >
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="##"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Blogs
-                </a>
+                </Link>
                 <ul className="dropdown-menu show-left">
                   <li className="dropdown-item">
-                    <a href="#0">
+                    <Link to="##0">
                       Blog Grid{" "}
                       <i className="fas fa-angle-right icon-arrow"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-side">
                       <li>
-                        <a className="dropdown-item" href="blog-grid-2col.html">
+                        <Link
+                          className="dropdown-item"
+                          to="#blog-grid-2col.html"
+                        >
                           Grid 2 Columns + Sidebar
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="blog-grid-3col.html">
+                        <Link
+                          className="dropdown-item"
+                          to="#blog-grid-3col.html"
+                        >
                           Grid 3 Columns
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="blog-grid-4col.html">
+                        <Link
+                          className="dropdown-item"
+                          to="#blog-grid-4col.html"
+                        >
                           Grid 4 Columns
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="dropdown-item">
-                    <a href="#0">
+                    <Link to="##0">
                       Blog Masonry{" "}
                       <i className="fas fa-angle-right icon-arrow"></i>
-                    </a>
+                    </Link>
                     <ul className="dropdown-side">
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="blog-masonry-2col.html"
+                          to="#blog-masonry-2col.html"
                         >
                           Masonry 2 Columns + Sidebar
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="blog-masonry-3col.html"
+                          to="#blog-masonry-3col.html"
                         >
                           Masonry 3 Columns
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="dropdown-item"
-                          href="blog-masonry-4col.html"
+                          to="#blog-masonry-4col.html"
                         >
                           Masonry 4 Columns
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="blog-classic.html">
+                    <Link className="dropdown-item" to="#blog-classic.html">
                       Blog Calssic
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="blog-list.html">
+                    <Link className="dropdown-item" to="#blog-list.html">
                       Blog List
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="blog-post.html">
+                    <Link className="dropdown-item" to="#blog-post.html">
                       Post Details
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="pg-contact2.html">
+                <Link className="nav-link" to="#pg-contact2.html">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="nav-info-right d-flex align-items-center">
               <div className="social">
                 <ul className="rest">
                   <li>
-                    <a href="#0">
+                    <Link to="##0">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#0">
+                    </Link>
+                    <Link to="##0">
                       <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#0">
+                    </Link>
+                    <Link to="##0">
                       <i className="fab fa-dribbble"></i>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

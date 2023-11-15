@@ -3,21 +3,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Test1 from "../assets/img/testim/1.jpg";
 import Test2 from "../assets/img/testim/2.jpg";
+import Testimonialimg from "../assets/myimg/Testimonial_Photo.png";
 
 export default function Testimonial() {
   const testimonials = [
     {
       name: "Alex Morgan",
       role: "Developer",
-      image: Test1,
+      image: Testimonialimg,
       text: "Creative SEO & Digital Marketing Solutions for your Business ghost flathead chain pickerel torpedo neon tetra soldierfish Ling brook lamprey slimy sculpin velvetfish Devario Colorado squaw zebra turkeyfish!",
     },
     {
       name: "John Doe",
       role: "Designer",
-      image: Test2,
+      image: Testimonialimg,
       text: "Another great testimonial goes here. It can contain details about the project and the person who provided the testimonial.",
     },
+
     // Add more testimonials here
   ];
 
