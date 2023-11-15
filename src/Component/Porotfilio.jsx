@@ -2,22 +2,25 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Work1 from "../assets/img/works/3/1.jpg";
-import Work2 from "../assets/img/works/3/2.jpg";
-import Work3 from "../assets/img/works/3/3.jpg";
-import Work4 from "../assets/img/works/3/4.jpg";
-import Work5 from "../assets/img/works/3/5.jpg";
+import New from "../assets/myimg/NEW.png";
+// import Work2 from "../assets/img/works/3/2.jpg";
+// import Work3 from "../assets/img/works/3/3.jpg";
+// import Work4 from "../assets/img/works/3/4.jpg";
+// import Work5 from "../assets/img/works/3/5.jpg";
 import Branding from "../assets/myimg/Branding.jpg";
-import Webdev from "../assets/myimg/webdevelopment2.jpg";
+import Webdev from "../assets/myimg/webdevelopmentNEW.jpg";
+import Webdev2 from "../assets/myimg/webdevelopment2.jpg";
+import UI from "../assets/myimg/UI-UX.jpg";
 
 import GD from "../assets/myimg/GD.png";
 
 export default function Porotfilio() {
   const works = [
-    { title: "Character Design", category: "Design ART", image: Work1 },
+    { title: "Character Design", category: "Design ART", image: New },
     { title: "Fancy Cormoran", category: "Photography", image: Branding },
     { title: "This is Random", category: "Branding", image: Webdev },
-    { title: "Editorial Designs", category: "Graphic Design", image: GD },
-    { title: "Concept Collection", category: "ART Direction", image: Work5 },
+    { title: "Editorial Designs", category: "Graphic Design", image: Webdev2 },
+    { title: "Concept Collection", category: "ART Direction", image: UI },
   ];
 
   return (
