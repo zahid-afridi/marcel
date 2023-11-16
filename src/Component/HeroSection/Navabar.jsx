@@ -91,7 +91,12 @@ const Navbar = ({ logo }) => {
           <Link className="navbar-brand" to="##0">
             <div className="logo">
               <div className="logo-light">
-                <img src={logo} style={{ zIndex: "999" }} alt="" />
+                <img
+                  src={logo}
+                  className="img-sm-fluid"
+                  style={{ zIndex: "999" }}
+                  alt=""
+                />
               </div>
             </div>
           </Link>

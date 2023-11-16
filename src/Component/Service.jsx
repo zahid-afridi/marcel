@@ -19,7 +19,7 @@ export default function Service() {
               </div>
             </div>
             <div className="col-lg-7 offset-lg-1">
-              <div className="row">
+              <div className="row ">
                 <div className="col-md-6">
                   <div className="item mb-50">
                     <span className="icon mb-15">01</span>
@@ -58,6 +58,30 @@ export default function Service() {
                 </div>
                 <div className="col-md-6">
                   <div className="item">
+                    <span className="icon mb-15">04</span>
+                    <h6 className="pb-20 mb-30 bord-thin-bottom">
+                      <span className="mr-20">/</span> Branding Strategy
+                    </h6>
+                    <p>
+                      We build and activate brands through cultural insight,
+                      strategic vision, and the power of emotion across every.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6 pt-4">
+                  <div className="item pt-4">
+                    <span className="icon mb-15">04</span>
+                    <h6 className="pb-20 mb-30 bord-thin-bottom">
+                      <span className="mr-20">/</span> Appliction Development
+                    </h6>
+                    <p>
+                      We build and activate brands through cultural insight,
+                      strategic vision, and the power of emotion across every.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6 pt-4">
+                  <div className="item pt-4">
                     <span className="icon mb-15">04</span>
                     <h6 className="pb-20 mb-30 bord-thin-bottom">
                       <span className="mr-20">/</span> Branding Strategy

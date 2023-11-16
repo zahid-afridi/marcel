@@ -1,5 +1,6 @@
 import React from "react";
 import FoterLogo from "../assets/myimg/FotterLogo.png";
+import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
@@ -66,12 +67,7 @@ export default function Footer() {
                   <p className="fz-13">
                     © 2022 Cinzel is Proudly Powered by{" "}
                     <span className="underline">
-                      <a
-                        href="https://themeforest.net/user/ThemesCamp"
-                        target="_blank"
-                      >
-                        ThemesCamp
-                      </a>
+                      <Link to="/">Marcel Tech</Link>
                     </span>
                   </p>
                 </div>
