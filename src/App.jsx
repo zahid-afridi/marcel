@@ -7,6 +7,7 @@ import "./scss/style.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Navabar from "./Component/HeroSection/Navabar";
+import Porotfilio from "./Pages/Portfolio";
 export default function App() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function App() {
         <Navabar logo={Logo}></Navabar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/portfolio" element={<Porotfilio></Porotfilio>}></Route>
         </Routes>
       </BrowserRouter>
     </>

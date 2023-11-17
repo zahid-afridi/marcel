@@ -443,6 +443,8 @@ header {
   position: relative;
   height: 85vh;
   padding: 120px 0;
+  background-color: #191b1d;
+  z-index: -1;
 
   .background {
     position: absolute;
@@ -450,9 +452,12 @@ header {
     bottom: 0;
     right: 0;
     left: 30%;
+    background-size: cover;
     z-index: -1;
   }
-
+  .title {
+    z-index: 999 !important;
+  }
   .item {
     padding-top: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);

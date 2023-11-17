@@ -88,7 +88,7 @@ const Navbar = ({ logo }) => {
         className={`navbar navbar-expand-lg ${isNavScroll ? "nav-scroll" : ""}`}
       >
         <div className="container-xxl">
-          <Link className="navbar-brand" to="##0">
+          <Link className="navbar-brand" to="/">
             <div className="logo">
               <div className="logo-light">
                 <img
@@ -110,121 +110,11 @@ const Navbar = ({ logo }) => {
               >
                 <Link
                   className="nav-link dropdown-toggle"
-                  to="##"
-                  role="button"
-                  data-bs-toggle="dropdown"
+                  to="/"
                   aria-expanded="false"
                 >
                   Home
                 </Link>
-                <ul className="dropdown-menu">
-                  <li className="dropdown-item">
-                    <Link to="##0">
-                      Showcase <i className="fas fa-angle-right icon-arrow"></i>
-                    </Link>
-                    <ul className="dropdown-side">
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to="#showcase-full.html"
-                        >
-                          Fullscreen Slider
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to="#showcase-interactive-center.html"
-                        >
-                          Interactive Links
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to="#showcase-interactive-center-horizontal.html"
-                        >
-                          Interactive Links 2
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to="#showcase-parallax.html"
-                        >
-                          Parallax Slider
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to="#showcase-column-horizontal.html"
-                        >
-                          Columns Horizontal
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#home-main.html">
-                      Home Main
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#home-creative.html">
-                      Creative Studio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#home-modern.html">
-                      Modern Agency
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#home-business.html">
-                      Business Corporate
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#home-arch.html">
-                      Architecture
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#home-freelancer.html">
-                      Freelancer
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="#home-agency.html">
-                      Digital Agency
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="#home-fullpage-scroll.html"
-                    >
-                      One Page Scrolling
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="#home-portfolio-grid.html"
-                    >
-                      Creative Agency
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
-                      to="#home-portfolio-minimal.html"
-                    >
-                      Minimal Portfolio
-                    </Link>
-                  </li>
-                </ul>
               </li>
 
               <li
@@ -311,9 +201,8 @@ const Navbar = ({ logo }) => {
               >
                 <Link
                   className="nav-link dropdown-toggle"
-                  to="##"
+                  to="/portfolio"
                   role="button"
-                  data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Portfolio
