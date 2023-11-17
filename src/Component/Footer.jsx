@@ -1,5 +1,5 @@
 import React from "react";
-import FoterLogo from "../assets/myimg/FotterLogo.png";
+import FoterLogo from "../assets/myimg/Emblem (1).png";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (
@@ -37,7 +37,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="sub-footer pb-50 pt-50 mt-80 sub-bg">
+        <div className="sub-footer pb-50 pt-50 mt-80 sub-bg ">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
@@ -62,13 +62,10 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-6">
-                <div className="copyrights full-width d-flex justify-content-end">
-                  <p className="fz-13">
-                    © 2022 Cinzel is Proudly Powered by{" "}
-                    <span className="underline">
-                      <Link to="/">Marcel Tech</Link>
-                    </span>
+              <div className="col-lg-6 pt-2">
+                <div className="copyrights full-width d-flex justify-content-end align-content-center">
+                  <p className="fz-13" style={{fontFamily:" !important"}}>
+                    © 2024 MarcelTech. All Rights Reserved
                   </p>
                 </div>
               </div>

@@ -10,7 +10,7 @@ const WaveAnimation = () => {
   let container = useRef(null);
   let camera, scene, renderer;
   let particles = [];
-  let count = 0;
+  let count = 20;
   let particle;
 
   useEffect(() => {

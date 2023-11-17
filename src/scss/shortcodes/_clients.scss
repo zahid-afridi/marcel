@@ -37,15 +37,16 @@
 
 		&:hover{
 
-			.img{
-				transform: scale(0);
-				opacity: 0;
-			}
+			// .img{
+			// 	transform: scale(0);
+			// 	opacity: 0;
+			// }
 
-			.link{
-				opacity: 1 !important;
-				transition: all 0;
-			}
+			// .link{
+			// 	opacity: 1 !important;
+			// 	transition: all 0;
+			// 	color: white;
+			// }
 
 			.char {
 				animation: fadeInUp .3s cubic-bezier(.3, 0, .7, 1) both;

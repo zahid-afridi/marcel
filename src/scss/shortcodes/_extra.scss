@@ -235,7 +235,7 @@ main {
 
           a {
             color: transparent;
-            -webkit-text-stroke: 1px #211e1e;
+            -webkit-text-stroke: 1px #928c8c;
           }
         }
       }
@@ -245,11 +245,11 @@ main {
       .item {
         &:nth-of-type(even) {
           h4 {
-            color: #fff;
+            color: #be1818;
             -webkit-text-stroke: 0;
 
             a {
-              color: #fff;
+              color: #928c8c;
               -webkit-text-stroke: 0;
             }
           }
@@ -258,11 +258,11 @@ main {
         &:nth-of-type(odd) {
           h4 {
             color: transparent;
-            -webkit-text-stroke: 1px #fff;
+            -webkit-text-stroke: 1px #140101;
 
             a {
               color: transparent;
-              -webkit-text-stroke: 1px #fff;
+              -webkit-text-stroke: 1px #928c8c;
             }
           }
         }
