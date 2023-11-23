@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/img/works/project2/bg.jpg";
+import HeroImg from "../assets/img/works/project2/bg4.jpg";
 console.log(HeroImg);
 export default function Hero() {
   const backgroundStyle = {
@@ -25,27 +25,27 @@ export default function Hero() {
                   class="fw-500 text-white title"
                   style={{ fontFamily: "'Syne', sans-serif" }}
                 >
-                  Inspiring new space.
+               Stitchers
                 </h1>
               </div>
               <div class="row">
                 <div class="col-md-4">
                   <div class="item">
-                    <h6>Client</h6>
+                    <h6 style={{color:'white'}}>Client</h6>
                     <p class="fw-500 mt-10">
-                      <a href="#0">Envato.com</a>
+                      <a href="">Stitchers</a>
                     </p>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="item">
-                    <h6>Date</h6>
+                    <h6 style={{color:'white'}}>Date</h6>
                     <p class="fw-500 mt-10">6 August 2019</p>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="item">
-                    <h6>Tags</h6>
+                    <h6 style={{color:'white'}}>Tags</h6>
                     <p class="fw-500 mt-10">
                       <a href="#0">Minimal</a> , <a href="#0">Modern</a> ,{" "}
                       <a href="#0">Design</a>

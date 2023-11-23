@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Portfolio_Component/Footer";
 import Hero from "../Portfolio_Component/Hero";
 import Main from "../Portfolio_Component/Main";
 
 export default function Portfolio() {
+ 
+  useEffect(() => {
+
+    document.body.style.backgroundColor = "#191b1d"; // Replace with your desired color code
+
+ 
+    return () => {
+      document.body.style.backgroundColor = "";
+    };
+  }, []); 
+
   return (
     <>
-      <div style={{ background: "" }}>
-        <Hero></Hero>
-        <Main></Main>
-        <Footer></Footer>
-      </div>
+      <Hero />
+      <Main />
+      <Footer />
     </>
   );
 }
