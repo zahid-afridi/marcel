@@ -416,7 +416,7 @@ const Navbar = ({ logo }) => {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to="#pg-contact2.html">
+                <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
               </li>

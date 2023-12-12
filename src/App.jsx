@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import Navabar from "./Component/HeroSection/Navabar";
 import Porotfilio from "./Pages/Portfolio";
 import Stitchers from "./Pages/Stitchers";
+import Contact from "./Pages/Contact";
 
 export default function App() {
   return (
@@ -17,10 +18,11 @@ export default function App() {
         <Navabar logo={Logo}></Navabar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/portfolio" element={<Porotfilio></Porotfilio>} exact>
+          <Route path="/portfolio" element={<Porotfilio></Porotfilio>}></Route>
+          <Route path="/contact" element={<Contact></Contact>}></Route>
           
            
-          </Route>
+          
             <Route path="/portfolio/stitchers" element={<Stitchers />}></Route>
         </Routes>
       </BrowserRouter>

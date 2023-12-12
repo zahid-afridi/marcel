@@ -62,7 +62,13 @@ export default function Home() {
 
     mouseCursor();
   }, []);
+      useEffect(() => {
+    document.body.style.backgroundColor = "white";
 
+    return () => {
+      document.body.style.backgroundColor = "";
+    };
+  }, []);
   return (
     <>
       {/* <!-- ==================== Start cursor ==================== */}

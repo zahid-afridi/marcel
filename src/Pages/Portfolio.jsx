@@ -2,25 +2,31 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../Portfolio_Component/Footer";
 import HeadImg from "../assets/img/slider/8.jpg";
-import Work1 from "../assets/img/works/grid/1.jpg";
-import Work2 from "../assets/img/works/grid/2.jpg";
-import Work3 from "../assets/img/works/grid/3.jpg";
-import Work4 from "../assets/img/works/grid/4.jpg";
-import Work5 from "../assets/img/works/grid/5.jpg";
-import Work6 from "../assets/img/works/grid/6.jpg";
+
+import Thumb1 from '../assets/myimg/protfoilio/thumb1.jpg'
+import Thumb2 from '../assets/myimg/protfoilio/thumb2.jpg'
+import Thumb3 from '../assets/myimg/protfoilio/thumb3.jpg'
+import Thumb4 from '../assets/myimg/protfoilio/thumb4.jpg'
+import Thumb5 from '../assets/myimg/protfoilio/thumb5.jpg'
+import Thumb6 from '../assets/myimg/protfoilio/thumb6.jpg'
+// import Work2 from "../assets/img/works/grid/2.jpg";
+// import Work3 from "../assets/img/works/grid/3.jpg";
+// import Work4 from "../assets/img/works/grid/4.jpg";
+// import Work5 from "../assets/img/works/grid/5.jpg";
+// import Work6 from "../assets/img/works/grid/6.jpg";
 import "animate.css/animate.min.css";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("*");
 
   const projects = [
-    { category: "brand", image: Work1, title: "stitchers" },
+    { category: "brand", image: Thumb1, title: "stitchers" },
 
-    { category: "app", image: Work2, title: "Character Design" },
-    { category: "web", image: Work3, title: "Character Design" },
-    { category: "brand", image: Work4, title: "Character Design" },
-    { category: "web", image: Work5, title: "Character Design" },
-    { category: "app", image: Work6, title: "Character Design" },
+    { category: "app", image: Thumb2, title: "Character Design" },
+    { category: "web", image: Thumb3, title: "Character Design" },
+    { category: "brand", image: Thumb4, title: "Character Design" },
+    { category: "web", image: Thumb5, title: "Character Design" },
+    { category: "app", image: Thumb6, title: "Character Design" },
   ];
 
   const filteredProjects =

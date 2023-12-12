@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
             <div className="col-lg-5 d-flex align-items-end">
               <div className="subs full-width">
-                <form action="contact.php">
+                {/* <form action="contact.php">
                   <div className="form-group">
                     <input
                       type="email"
@@ -32,7 +32,7 @@ export default function Footer() {
                       Subscribe
                     </button>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>
