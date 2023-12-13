@@ -10,6 +10,7 @@ import Navabar from "./Component/HeroSection/Navabar";
 import Porotfilio from "./Pages/Portfolio";
 import Stitchers from "./Pages/Stitchers";
 import Contact from "./Pages/Contact";
+import CozyandComfort from "./Pages/CozyandComfort";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
            
           
             <Route path="/portfolio/stitchers" element={<Stitchers />}></Route>
+            <Route path="/portfolio/cozy&comfort" element={<CozyandComfort></CozyandComfort>}></Route>
         </Routes>
       </BrowserRouter>
     </>

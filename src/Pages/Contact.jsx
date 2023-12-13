@@ -77,7 +77,7 @@ export default function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div>
-                                                    <input id="form_phone" type="text" name="phone" placeholder="Phone Number"/>
+                                                    <input id="form_phone" type="number" name="phone" placeholder="Phone Number"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,30 +108,31 @@ export default function Contact() {
 
                                 <div className="col-md-4 sm-mb50">
                                     <div className="mb-20 pb-20 bord-thin-bottom">
-                                        <h5 className="fz-20 fw-700 text-white">Barcelona</h5>
+                                        <h5 className="fz-20 fw-700 text-white">Karachi</h5>
                                     </div>
 
                                     <div className="item mb-15">
-                                        <h6 className="fz-18 fw-400 text-white">295 Witting Streets Suite 666, Melbourne, Australia</h6>
+                                        <h6 className="fz-18 fw-400 text-white">Plot D-98/2, Block 4 Clifton, Karachi, Karachi City, Sindh 75600, Pakistan.</h6>
                                     </div>
 
                                     <div className="item">
-                                        <h6 className="fw-400"><span className="fw-700 mr-10 text-white">Call US :</span> <span className="main-color">+4.930.705.5448</span></h6>
+                                        <h6 className="fw-400"><span className="fw-700 mr-10 text-white">Call US :</span> <span className="main-color">+92(21)33487810</span></h6>
                                     </div>
 
                                     <div className="item mt-20">
                                         <p>Assistance hours: Monday – Friday
-                                            6 am to 8 pm EST (toll free)</p>
+                                            12 pm to 8 am EST (toll free)</p>
                                     </div>
                                 </div>
 
                                 <div className="col-md-4 sm-mb50">
                                     <div className="mb-20 pb-20 bord-thin-bottom">
-                                        <h5 className="fz-20 fw-700 text-white">London</h5>
+                                        <h5 className="fz-20 fw-700 text-white">USA</h5>
                                     </div>
 
                                     <div className="item mb-15">
-                                        <h6 className="fz-18 fw-400 text-white">295 Witting Streets Suite 666, Melbourne, Australia</h6>
+                                        <h6 className="fz-18 fw-400 text-white">124 Broadkill RD# 797 Milton, DE 19968-1008
+7765</h6>
                                     </div>
 
                                     <div className="item">

@@ -1,12 +1,8 @@
 import React from "react";
-import HeroImg from "../assets/img/works/project2/bg4.jpg";
-console.log(HeroImg);
-export default function Hero() {
-  const backgroundStyle = {
-    backgroundImage: `url(${HeroImg})`,
-    backgroundSize: "cover !important",
-    backgroundPosition: "center !important",
-  };
+
+
+export default function Hero({backgroundStyle,heroHeading}) {
+
 
   return (
     <>
@@ -25,7 +21,7 @@ export default function Hero() {
                   class="fw-500 text-white title"
                   style={{ fontFamily: "'Syne', sans-serif" }}
                 >
-               Stitchers
+             {heroHeading}
                 </h1>
               </div>
               <div class="row">

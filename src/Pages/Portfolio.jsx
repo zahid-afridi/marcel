@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import Footer from "../Portfolio_Component/Footer";
 import HeadImg from "../assets/img/slider/8.jpg";
 
-import Thumb1 from '../assets/myimg/protfoilio/thumb1.jpg'
-import Thumb2 from '../assets/myimg/protfoilio/thumb2.jpg'
-import Thumb3 from '../assets/myimg/protfoilio/thumb3.jpg'
-import Thumb4 from '../assets/myimg/protfoilio/thumb4.jpg'
-import Thumb5 from '../assets/myimg/protfoilio/thumb5.jpg'
-import Thumb6 from '../assets/myimg/protfoilio/thumb6.jpg'
+import Thumb1 from "../assets/myimg/protfoilio/thumb1.jpg";
+import Thumb2 from "../assets/myimg/protfoilio/thumb2.jpg";
+import Thumb3 from "../assets/myimg/protfoilio/thumb3.jpg";
+import Thumb4 from "../assets/myimg/protfoilio/thumb4.jpg";
+import Thumb5 from "../assets/myimg/protfoilio/thumb5.jpg";
+import Thumb6 from "../assets/myimg/protfoilio/thumb6.jpg";
 // import Work2 from "../assets/img/works/grid/2.jpg";
 // import Work3 from "../assets/img/works/grid/3.jpg";
 // import Work4 from "../assets/img/works/grid/4.jpg";
@@ -20,13 +20,28 @@ export default function Portfolio() {
   const [filter, setFilter] = useState("*");
 
   const projects = [
-    { category: "brand", image: Thumb1, title: "stitchers" },
+    {
+      category: "brand",
+      image: Thumb1,
+      navlink: "stitchers",
+      title: "Stitchers",
+    },
 
-    { category: "app", image: Thumb2, title: "Character Design" },
-    { category: "web", image: Thumb3, title: "Character Design" },
-    { category: "brand", image: Thumb4, title: "Character Design" },
-    { category: "web", image: Thumb5, title: "Character Design" },
-    { category: "app", image: Thumb6, title: "Character Design" },
+    {
+      category: "app",
+      image: Thumb2,
+      navlink: "cozy&comfort",
+      title: "Cozy & Comfort",
+    },
+    { category: "web", image: Thumb3, navlink: "#", title: "Character Design" },
+    {
+      category: "brand",
+      image: Thumb4,
+      navlink: "#",
+      title: "Character Design",
+    },
+    { category: "web", image: Thumb5, navlink: "#", title: "Character Design" },
+    { category: "app", image: Thumb6, navlink: "#", title: "Character Design" },
   ];
 
   const filteredProjects =
@@ -63,7 +78,7 @@ export default function Portfolio() {
               <div className="col-12">
                 <div className="cont mb-80">
                   <h6 className="sub-title">
-                    <Link to="home-main.html">Home</Link>
+                    <Link to="/">Home</Link>
                     <span className="ml-20 mr-20">/</span>
                     <span className="main-color">Portfolio</span>
                   </h6>
@@ -105,7 +120,7 @@ export default function Portfolio() {
                   >
                     <div className="item-img">
                       <Link
-                        to={`/portfolio/${project.title
+                        to={`/portfolio/${project.navlink
                           .toLowerCase()
                           .replace(" ", "-")}`}
                         className=""
@@ -120,10 +135,22 @@ export default function Portfolio() {
                       style={{ marginTop: "-20px", marginBottom: "20px" }}
                     >
                       <span className="sub-title tag opacity-7">
-                        <Link to="project-details.html">{project.title}</Link>
+                        <Link
+                          to={`/portfolio/${project.navlink
+                            .toLowerCase()
+                            .replace(" ", "-")}`}
+                        >
+                          {project.title}
+                        </Link>
                       </span>
                       <h6>
-                        <Link to="project-details.html">{project.title}</Link>
+                        <Link
+                          to={`/portfolio/${project.navlink
+                            .toLowerCase()
+                            .replace(" ", "-")}`}
+                        >
+                          {project.title}
+                        </Link>
                       </h6>
                     </div>
                   </div>

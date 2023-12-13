@@ -39,7 +39,8 @@ export default function Footer() {
                 <h5 className="title fw-600 fz-20 mb-30">Office</h5>
                 <ul className="address">
                   <li className="adrs mb-15">
-                    Germany — 785 15h Street, Office 478 Berlin, De 81566
+124 Broadkill RD# 797 Milton, DE 19968-1008
+7765
                   </li>
                   <li className="eml underline mb-15">
                     <a href="mailto:example@website.com">
