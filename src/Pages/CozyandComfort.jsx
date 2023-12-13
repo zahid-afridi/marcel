@@ -13,8 +13,6 @@ import Img8 from "../assets/myimg/protfoilio/cozy/img8.jpg";
 import Img9 from "../assets/myimg/protfoilio/cozy/img9.jpg";
 import Img10 from "../assets/myimg/protfoilio/cozy/img10.jpg";
 
-import { Outlet } from "react-router-dom";
-
 import HeroImg from "../assets/myimg/protfoilio/cozy/headimg.jpg";
 export default function CozyandComfort() {
   useEffect(() => {
@@ -48,46 +46,46 @@ export default function CozyandComfort() {
       {/* images start */}
       <div className="container  ">
         <div className="row ">
-          <div className="col-md-12 col-lg-12 col-12 col-sm-12">
+          <div className="col-md-12 col-lg-12 col-12 col-sm-12 p-2">
             <div>
-              <img src={Img1} className="img-fluid" alt="" />
+              <img src={Img1} className="img-fluid w-full" alt="" />
             </div>
           </div>
         </div>
-        <div className="row mt-3 ">
-          <div className="col-md-7 col-lg-7 col-12 col-sm-12 ">
+        <div className="row ">
+          <div className="col-md-7 col-lg-7 col-12 col-sm-12 p-2">
             <div className="col-12">
               <img src={Img2} className="img-fluid w-full" alt="" />
             </div>
-            <div className="col-12 mt-2">
+            <div className="col-12 mt-3">
               <img src={Img5} className="img-fluid w-full" alt="" />
             </div>
           </div>
-          <div className="col-md-5 col-lg-5 col-12 col-sm-12">
+          <div className="col-md-5 col-lg-5 col-12 col-sm-12 p-2">
             <div className="col-12">
-              <img src={Img3} className="" alt="" style={{ height: "36rem" }} />
+              <img src={Img3} className="" alt="" />
             </div>
-            <div className="col-12 mt-2">
+            <div className="col-12 mt-3">
               <img src={Img4} className="img-fluid w-full" alt="" />
             </div>
-            <div className="col-12 mt-2">
+            <div className="col-12 mt-3">
               <img src={Img6} className="img-fluid " alt="" />
             </div>
           </div>
         </div>
-        <div className="row mt-2">
-          <div className="col-lg-6 col-md-6 col-12 col-sm-12 ">
-            <img src={Img7} className="" alt="" style={{ height: "43rem" }} />
+        <div className="row ">
+          <div className="col-lg-6 col-md-6 col-12 col-sm-12 p-2">
+            <img src={Img7} className="" alt="" />
           </div>
-          <div className="col-lg-6 col-md-6 col-12 col-sm-12 ">
+          <div className="col-lg-6 col-md-6 col-12 col-sm-12 p-2">
             <img src={Img8} className="img-fluid " alt="" />
           </div>
         </div>
-        <div className="row mt-2">
-          <div className="col-lg-12 col-md-12 col-12 col-sm-12 ">
+        <div className="row mt-1">
+          <div className="col-lg-12 col-md-12 col-12 col-sm-12 p-0">
             <img src={Img9} className="img-fluid " alt="" />
           </div>
-          <div className="col-lg-12 col-md-12 col-12 mt-2 col-sm-12 ">
+          <div className="col-lg-12 col-md-12 col-12 mt-2 col-sm-12 p-0 mt-3">
             <img src={Img10} className="img-fluid " alt="" />
           </div>
         </div>

@@ -1,9 +1,6 @@
 import React from "react";
 
-
-export default function Hero({backgroundStyle,heroHeading}) {
-
-
+export default function Hero({ backgroundStyle, heroHeading }) {
   return (
     <>
       <section class="works-header d-flex align-items-end ">
@@ -21,13 +18,13 @@ export default function Hero({backgroundStyle,heroHeading}) {
                   class="fw-500 text-white title"
                   style={{ fontFamily: "'Syne', sans-serif" }}
                 >
-             {heroHeading}
+                  {heroHeading}
                 </h1>
               </div>
               <div class="row">
                 <div class="col-md-4">
                   <div class="item">
-                    <h6 style={{color:'white'}}>Client</h6>
+                    <h6 style={{ color: "white" }}>Client</h6>
                     <p class="fw-500 mt-10">
                       <a href="">Stitchers</a>
                     </p>
@@ -35,13 +32,13 @@ export default function Hero({backgroundStyle,heroHeading}) {
                 </div>
                 <div class="col-md-4">
                   <div class="item">
-                    <h6 style={{color:'white'}}>Date</h6>
+                    <h6 style={{ color: "white" }}>Date</h6>
                     <p class="fw-500 mt-10">6 August 2019</p>
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="item">
-                    <h6 style={{color:'white'}}>Tags</h6>
+                    <h6 style={{ color: "white" }}>Tags</h6>
                     <p class="fw-500 mt-10">
                       <a href="#0">Minimal</a> , <a href="#0">Modern</a> ,{" "}
                       <a href="#0">Design</a>

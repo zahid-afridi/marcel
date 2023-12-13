@@ -21,7 +21,7 @@ export default function Portfolio() {
   };
   return (
     <>
-      <Hero backgroundStyle={backgroundStyle} heroHeading="Stitchers"/>
+      <Hero backgroundStyle={backgroundStyle} heroHeading="Stitchers" />
       <Main />
       <Footer />
       <Outlet></Outlet>

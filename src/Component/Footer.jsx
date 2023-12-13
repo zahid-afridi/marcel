@@ -12,9 +12,9 @@ export default function Footer() {
                 <h3>
                   We develop digital future​.
                   <span className="mt-10 l-block">
-                    <a href="pg-contact2.html">
+                    <Link to="contact">
                       <span className="main-color">Contact us</span>.
-                    </a>
+                    </Link>
                   </span>
                 </h3>
               </div>
@@ -64,7 +64,7 @@ export default function Footer() {
               </div>
               <div className="col-lg-6 pt-2">
                 <div className="copyrights full-width d-flex justify-content-end align-content-center">
-                  <p className="fz-13" style={{fontFamily:" !important"}}>
+                  <p className="fz-13" style={{ fontFamily: " !important" }}>
                     © 2024 MarcelTech. All Rights Reserved
                   </p>
                 </div>
