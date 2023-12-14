@@ -13,11 +13,13 @@ import Contact from "./Pages/Contact";
 import CozyandComfort from "./Pages/CozyandComfort";
 import ScrollTotop from "./Component/ScrollTotop";
 import About from "./Pages/About";
+import MouseFollow from "./Component/MouseFollow";
 
 export default function App() {
   return (
     <>
       <BrowserRouter>
+        <MouseFollow></MouseFollow>
         <Navabar logo={Logo}></Navabar>
         <ScrollTotop></ScrollTotop>
         <Routes>

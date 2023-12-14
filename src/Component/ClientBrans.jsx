@@ -14,6 +14,7 @@ import C3 from "../assets/img/brands/04.png";
 import C4 from "../assets/img/brands/06.png";
 import C5 from "../assets/img/brands/07.png";
 import C6 from "../assets/img/brands/03.png";
+import { Link } from "react-router-dom";
 
 export default function ClientBrands() {
   const [hoveredImg, setHoveredImg] = useState(null);
@@ -50,18 +51,21 @@ export default function ClientBrands() {
               >
                 <div className="item wow fadeIn" data-wow-delay=".6s">
                   <div className="img">
-                    <img src={hoveredImg === index ? colorImages[index] : img} alt="" />
+                    <img
+                      src={hoveredImg === index ? colorImages[index] : img}
+                      alt=""
+                    />
                   </div>
-                  <a href="#0" className="link" data-splitting>
+                  <Link to="#0" className="link" data-splitting>
                     www.Cinzel.com
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
             <div className="col-md-3 col-6 valign text-center">
               <div className="full-width">
                 <h6 className="sub-title main-color mb-0 wow" data-splitting>
-                  <a href="pg-contact2.html">Become a Client</a>
+                  <Link to="">Become a Client</Link>
                 </h6>
               </div>
             </div>

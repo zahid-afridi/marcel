@@ -1,13 +1,18 @@
 import React from "react";
 import Footer from "../Portfolio_Component/Footer";
 import SliderImg from "../assets/img/slider/b1.jpg";
-import InteroImg from "../assets/img/intro/1.jpg";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
+import InteroImg from "../assets/img/intro/1.jpg";
+import CampaignOutlinedIcon from "@mui/icons-material/CampaignOutlined";
+import ViewInArOutlinedIcon from "@mui/icons-material/ViewInArOutlined";
 import Team1 from "../assets/img/team/t1.jpg";
 import Team2 from "../assets/img/team/t2.jpg";
 import Team3 from "../assets/img/team/t3.jpg";
 import Testimonial from "../Portfolio_Component/Testemonial";
 import ClientBrands from "../Component/ClientBrans";
+// import NotificationsIcon from "@mui/icons-material/Notifications";
+import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
+import { Link } from "react-router-dom";
 export default function About() {
   //   const backgroundStyle = {
   //     backgroundImage: `url(${SliderImg})`,
@@ -86,6 +91,10 @@ export default function About() {
               <div className="col-lg-4">
                 <div className="item flex md-mb50">
                   <div className="icon mr-30">
+                    <CampaignOutlinedIcon
+                      className="main-color fz-80"
+                      //   style={{ marginTop: "-0.6rem" }}
+                    ></CampaignOutlinedIcon>
                     <span className="main-color fz-55 pe-7s-bell"></span>
                   </div>
                   <div className="cont">
@@ -100,6 +109,7 @@ export default function About() {
               <div className="col-lg-4">
                 <div className="item flex md-mb50">
                   <div className="icon mr-30">
+                    <ViewInArOutlinedIcon className="main-color fz-80"></ViewInArOutlinedIcon>
                     <span className="main-color fz-55 pe-7s-box2"></span>
                   </div>
                   <div className="cont">
@@ -114,6 +124,7 @@ export default function About() {
               <div className="col-lg-4">
                 <div className="item flex">
                   <div className="icon mr-30">
+                    <LanguageOutlinedIcon className="main-color fz-80"></LanguageOutlinedIcon>
                     <span className="main-color fz-55 pe-7s-browser"></span>
                   </div>
                   <div className="cont">
@@ -138,36 +149,36 @@ export default function About() {
                   <div className="slide-har st1">
                     <div className="box">
                       <div className="item">
-                        <h4>UI/UX Experience</h4>
+                        <h4 className="text-white">UI/UX Experience</h4>
                       </div>
                       <div className="item">
-                        <h4>Web Development</h4>
+                        <h4 className="text-whtie">Web Development</h4>
                       </div>
                       <div className="item">
-                        <h4>Digital Marketing</h4>
+                        <h4 className="text-white">Digital Marketing</h4>
                       </div>
                       <div className="item">
                         <h4>Product Design</h4>
                       </div>
                       <div className="item">
-                        <h4>Mobile Solutions</h4>
+                        <h4 className="text-white">Mobile Solutions</h4>
                       </div>
                     </div>
                     <div className="box">
                       <div className="item">
-                        <h4>UI/UX Experience</h4>
+                        <h4 className="text-white">UI/UX Experience</h4>
                       </div>
                       <div className="item">
-                        <h4>Web Development</h4>
+                        <h4 className="text-white">Web Development</h4>
                       </div>
                       <div className="item">
-                        <h4>Digital Marketing</h4>
+                        <h4 className="text-white">Digital Marketing</h4>
                       </div>
                       <div className="item">
-                        <h4>Product Design</h4>
+                        <h4 className="text-white">Product Design</h4>
                       </div>
                       <div className="item">
-                        <h4>Mobile Solutions</h4>
+                        <h4 className="text-white">Mobile Solutions</h4>
                       </div>
                     </div>
                   </div>
@@ -213,8 +224,6 @@ export default function About() {
                             backgroundColor: "transparent",
                             fontSize: "52px",
                             color: "red",
-                            border: "none",
-                            outline: "none",
                           }}
                         ></PlayArrowOutlinedIcon>
                       </button>
@@ -338,74 +347,74 @@ export default function About() {
                     <div className="box">
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Get In Touch</a>
+                          <Link to="/contact">Get In Touch</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Say Hi !</a>
+                          <Link to="">Say Hi !</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Contact Us</a>
+                          <Link to="/contact">Contact Us</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Work Together</a>
+                          <Link to="">Work Together</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Get In Touch</a>
+                          <Link to="/contact">Get In Touch</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Say Hi !</a>
+                          <Link hretof="">Say Hi !</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Contact Us</a>
+                          <Link to="/contact">Contact Us</Link>
                         </h4>
                       </div>
                     </div>
                     <div className="box">
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Get In Touch</a>
+                          <Link to="/contactl">Get In Touch</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Say Hi !</a>
+                          <Link to="">Say Hi !</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Contact Us</a>
+                          <Link to="/contact">Contact Us</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Work Together</a>
+                          <Link to="">Work Together</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Get In Touch</a>
+                          <Link to="/contact">Get In Touch</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Say Hi !</a>
+                          <Link to="/contact">Say Hi !</Link>
                         </h4>
                       </div>
                       <div className="item">
                         <h4>
-                          <a href="pg-contact2.html">Contact Us</a>
+                          <Link to="/contact">Contact Us</Link>
                         </h4>
                       </div>
                     </div>

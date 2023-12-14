@@ -342,11 +342,11 @@ main {
     .item {
       h4 {
         color: transparent !important;
-        -webkit-text-stroke: 1px #fff;
+        -webkit-text-stroke: 1px #fff !important;
 
         a {
           color: transparent !important;
-          -webkit-text-stroke: 1px #fff;
+          -webkit-text-stroke: 1px #fff !important;
         }
       }
     }
@@ -357,11 +357,8 @@ main {
       h4 {
         color: #fff !important;
 
-        -webkit-text-stroke: 0 !important;
-
         a {
           color: #fff !important;
-          -webkit-text-stroke: 0 !important;
         }
       }
     }
