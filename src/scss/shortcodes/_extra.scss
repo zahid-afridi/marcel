@@ -308,6 +308,159 @@ main {
 }
 
 /* ====================== [ End marquee ] ====================== */
+/* ====================== [ Start marquee2 ] ====================== */
+
+.My_main-marq {
+  position: relative;
+  padding: 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    bottom: -30px;
+    left: -30px;
+    right: -30px;
+    pointer-events: none;
+  }
+
+  &.lrg {
+    .box {
+      .item {
+        h4 {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+
+  .slide-har {
+    display: flex;
+  }
+
+  .strok {
+    .item {
+      h4 {
+        color: transparent !important;
+        -webkit-text-stroke: 1px #fff;
+
+        a {
+          color: transparent !important;
+          -webkit-text-stroke: 1px #fff;
+        }
+      }
+    }
+  }
+
+  .non-strok {
+    .item {
+      h4 {
+        color: #fff !important;
+
+        -webkit-text-stroke: 0 !important;
+
+        a {
+          color: #fff !important;
+          -webkit-text-stroke: 0 !important;
+        }
+      }
+    }
+  }
+
+  .box {
+    display: flex;
+
+    .item {
+      padding: 0 60px;
+      display: flex;
+
+      h4 {
+        white-space: nowrap;
+        font-size: 6vw;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      &:nth-of-type(even) {
+        h4 {
+          color: transparent;
+          -webkit-text-stroke: 1px #fafafa !important;
+
+          a {
+            color: transparent;
+            -webkit-text-stroke: 1px #efdada !important;
+          }
+        }
+      }
+    }
+
+    &:last-of-type {
+      .item {
+        &:nth-of-type(even) {
+          h4 {
+            color: #f3f1f1 !important;
+            -webkit-text-stroke: 0;
+
+            a {
+              color: #f9f5f5 !important;
+              -webkit-text-stroke: 0;
+            }
+          }
+        }
+
+        &:nth-of-type(odd) {
+          h4 {
+            color: transparent;
+            -webkit-text-stroke: 1px #eae0e0 !important;
+
+            a {
+              color: transparent;
+              -webkit-text-stroke: 1px #eedddd !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.slide-har {
+  position: relative;
+
+  &.st1 {
+    .box {
+      position: relative;
+      animation: slide-har 50s linear infinite;
+    }
+  }
+
+  &.st2 {
+    .box {
+      position: relative;
+      animation: slide-har-revers 50s linear infinite;
+    }
+  }
+}
+
+@keyframes slide-har {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-har-revers {
+  100% {
+    transform: translateX(0%);
+  }
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ====================== [ End marquee ] ====================== */
 
 /* ====================== [ Start Text Animation & Images ] ====================== */
 

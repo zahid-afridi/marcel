@@ -122,13 +122,7 @@ const Navbar = ({ logo }) => {
                 onMouseEnter={handleDropdownHover}
                 onMouseLeave={handleDropdownLeave}
               >
-                <Link
-                  className="nav-link dropdown-toggle"
-                  to="##"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <Link className="nav-link dropdown-toggle" to="/about">
                   About Us
                 </Link>
               </li>
